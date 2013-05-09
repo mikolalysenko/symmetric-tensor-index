@@ -1,0 +1,35 @@
+{
+  "name": "symmetric-tensor-index",
+  "version": "0.0.0",
+  "description": "Index arithmetic for symmetric tensors",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.4.2"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/symmetric-tensor-index.git"
+  },
+  "keywords": [
+    "symmetric",
+    "tensor",
+    "multivariate",
+    "polynomial",
+    "multinomial",
+    "taylor",
+    "series",
+    "index",
+    "arithmetic"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "f0ba721c2f616625e410c450efc3a1a7e6132788"
+}
