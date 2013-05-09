@@ -1,6 +1,6 @@
 {
   "name": "symmetric-tensor-index",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Index arithmetic for symmetric tensors",
   "main": "index.js",
   "directories": {

@@ -8,7 +8,7 @@ function factorial(n) {
   return r
 }
 
-function tensorToDegree(rank, dimension, seq, result) {
+function tensorToDegree(dimension, rank, seq, result) {
   rank |= 0
   dimension |= 0
   result = result || new Array(dimension)
@@ -23,7 +23,7 @@ function tensorToDegree(rank, dimension, seq, result) {
 }
 exports.tensorToDegree = tensorToDegree
 
-function degreeToTensor(rank, dimension, degrees, result) {
+function degreeToTensor(dimension, rank, degrees, result) {
   rank |= 0
   dimension |= 0
   result = result || new Array(rank)
@@ -38,7 +38,7 @@ function degreeToTensor(rank, dimension, degrees, result) {
 }
 exports.degreeToTensor = degreeToTensor
 
-function degreeToArray(rank, dimension, degrees) {
+function degreeToArray(dimension, rank, degrees) {
   rank |= 0
   dimension |= 0
   var index = 0, sum = 0, i, j, w
@@ -54,12 +54,12 @@ function degreeToArray(rank, dimension, degrees) {
 }
 exports.degreeToArray = degreeToArray
 
-function tensorToArray(rank, dimension, input) {
-  return degreeToArray(rank, dimension, tensorToDegree(rank, dimension, input))
+function tensorToArray(dimension, rank, input) {
+  return degreeToArray(dimension, rank, tensorToDegree(dimension, rank, input))
 }
 exports.tensorToArray = tensorToArray
 
-function nextTensor(rank, dimension, seq, index) {
+function nextTensor(dimension, rank, seq, index) {
   rank |= 0
   dimension |= 0
   index = (index|0) || 0

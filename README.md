@@ -22,50 +22,50 @@ API
 var sym = require("symmetric-tensor-index")
 ```
 
-### `sym.nextTensor(rank, dimension, seq[, index])`
+### `sym.nextTensor(dimension, rank, seq[, index])`
 Finds the index of the next entry in the tensor.
 
-* `rank` is the rank of the tensor
 * `dimension` is the dimension of the tensor
+* `rank` is the rank of the tensor
 * `seq` is the tensor index
 * `index` is the array index (optional)
 
 **Returns** The next array index.  `seq` is updated in place.
 
-### `sym.tensorToDegree(rank, dimension, seq[, result])`
+### `sym.tensorToDegree(dimension, rank, seq[, result])`
 Converts a tensor index to a degree index
 
-* `rank` rank of the tensor
 * `dimension` dimension of vector space
+* `rank` rank of the tensor
 * `seq` is the tensor index
 * `result` (optional) gets the resulting computation
 
 **Returns** `result`
 
-### `sym.tensorToArray(rank, dimension, seq)`
+### `sym.tensorToArray(dimension, rank, seq)`
 Converts a tensor index to an array index
 
-* `rank` rank of the tensor
 * `dimension` dimension of vector space
+* `rank` rank of the tensor
 * `seq` is the tensor index
 
 **Returns** The array index of the tensor entry
 
-### `sym.degreeToTensor(rank, dimension, degrees[, result])`
+### `sym.degreeToTensor(dimension, rank, degrees[, result])`
 Converts a degree index to a tensor index
 
-* `rank` rank of the tensor
 * `dimension` dimension of vector space
+* `rank` rank of the tensor
 * `degrees` is the degree index
 * `result` is the result (optional)
 
 **Returns** `result`
 
-### `sym.degreeToArray(rank, dimension, degrees)`
+### `sym.degreeToArray(dimension, rank, degrees)`
 Converts a degree index to an array index
 
-* `rank` rank of the tensor
 * `dimension` dimension of vector space
+* `rank` rank of the tensor
 * `degrees` is the degree index
 
 **Returns** The array index of the degree sequence
